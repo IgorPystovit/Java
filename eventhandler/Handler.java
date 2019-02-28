@@ -1,43 +1,27 @@
 package tenthChapter.eventhandler;
 
+import java.util.ArrayList;
+
 public class Handler {
-    private static int counter = 0;
-    private Object[] eventList ;
 
-    public Handler(int size){
-        eventList = new Object[size];
+    private ArrayList<Event> eventList = new ArrayList<Event>();
+    public Handler(){
+
     }
 
-    public Handler(){}
-
-    public void setSize(int size){
-        eventList = new Object[size];
-    }
-    public void add(Object a){
-        eventList[counter] = a;
-        counter++;
-    }
-
-    public Object[] copy(Object[] array){
-        Object[] ar = new Object[array.length];
-        for (int i = 0; i < ar.length; i++){
-            ar[i] = array[i];
-        }
-        return ar;
-    }
-
-    public void remove(Object a){
-        for (int i = 0; i < eventList.length; i++){
-            if (eventList[i] == a){
-                eventList[i] = 0;
-                return;
-            }
-        }
+    public void addEvent(Event ev){
+        eventList.add(ev);
     }
 
     public void run(){
-        for(Object a:copy(eventList)){
-            System.out.println(a);
+        while (eventList.size() > 0){
+            for (Event ev : new ArrayList<Event>(eventList)){
+                if (ev.isReady()){
+                    ev.eventAction();
+                    System.out.println(ev);
+                    eventList.remove(ev);
+                }
+            }
         }
     }
 }

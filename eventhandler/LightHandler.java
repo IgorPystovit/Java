@@ -1,12 +1,12 @@
 package tenthChapter.eventhandler;
 
-public class LightHandler extends Handler{
+import java.util.ArrayList;
 
-    public LightHandler(int size){
-        super(size);
+public class LightHandler extends Handler{
+    ArrayList<Event> eventList = new ArrayList<Event>();
+    public LightHandler(){
     }
 
-    public LightHandler(){}
 
     private int light = 0;
     public class LightOn extends Event{
@@ -39,19 +39,25 @@ public class LightHandler extends Handler{
         }
     }
 
-    public class setEventMode extends Event{
+
+    public class SetEventMode extends Event{
         private Event[] eventList;
-        public setEventMode(long delayTime,Event[] eventList){
+        public SetEventMode(long delayTime,Event[] eventList){
             super(delayTime);
             this.eventList = eventList;
             eventAction();
+            startAt();
         }
 
+        public SetEventMode(){}
 
         public void eventAction(){
             for (Event e:eventList){
-                add(e);
+                addEvent(e);
+                startAt();
             }
+            startAt();
+            addEvent(this);
         }
 
         public String toString(){
