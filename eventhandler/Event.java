@@ -1,7 +1,7 @@
 package tenthChapter.eventhandler;
 
 public abstract class Event {
-    private long delayTime = 0;
+    public long delayTime = 0;
     private long eventTime = 0;
     public Event(long delayTime){
         this.delayTime = delayTime;

@@ -3,6 +3,7 @@ package tenthChapter.eventhandler;
 import java.util.ArrayList;
 
 public class LightHandler extends Handler{
+    public static long counter = 0;
     ArrayList<Event> eventList = new ArrayList<Event>();
     public LightHandler(){
     }
@@ -54,10 +55,14 @@ public class LightHandler extends Handler{
         public void eventAction(){
             for (Event e:eventList){
                 addEvent(e);
-                startAt();
+                e.startAt();
+                System.out.println(e.getClass().getSimpleName()+" "+e.delayTime);
             }
-            startAt();
-            addEvent(this);
+//            if ( counter <= 4){
+                addEvent(this);
+                startAt();
+//                counter++;
+//            }
         }
 
         public String toString(){
