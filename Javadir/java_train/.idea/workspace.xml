@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6f8f456-36a4-4d92-93f2-2d048daf54c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MoveCoordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/Glyph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/PolyConstrucors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/RectangularGlyph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/RoundGlyph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/AlertStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/EnginesFailureAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/FireAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/Out_of_FuelAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/Starship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eighthChapter/glyph/spaceShip/performTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/Gebril.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/Selectable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/SimpleCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindsCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Brass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Guitar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Instrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Music5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Percussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Playable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Stringer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Wind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/Music5/Woodwind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Apply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Processable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Splitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/StringProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/SwapCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/UpperCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/filters/BandPass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/filters/FilterAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/filters/LowPass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/filters/ProcessingWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/filters/Waveform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adbstraction/Derivative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adbstraction/Final.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adbstraction/Root.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adbstraction/vehicleInterface/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/adbstraction/vehicles/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/Bicycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/BicycleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/CycleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/CyclePark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/Unicycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/UnicycleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/venturousGames/DropTheCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/venturousGames/DropTheCube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/venturousGames/PlayGames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/venturousGames/Venturable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/fabricalMethod/venturousGames/VenturableFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceAdapters/RandomDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceAdapters/RandomDoubleAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceAdapters/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceAdapters/StringSeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/IncrementNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/Incrementable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/NumberCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/Printable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ninethChapter/interfaceExtension/Read.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Riding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Food/MakingSandwich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/Exe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/MoreSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/ReferenceCounting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/AnonClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Call.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/CallBacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Incrementable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/MyIncrement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenHouseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenhouseControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Extension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Determine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Selection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/Singletone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/testSingletone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Asign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Bsign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Signable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/anonymousClasses/Parcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/anonymousClasses/StringCorrector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/GreenhouseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/HandlerExe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/ClassWithInner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/Inheriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/innerClassesNUpcast/StringManageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/innerClassesNUpcast/StringManageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/innerClassesNUpcast/StringsManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/AnotherClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Concat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Selector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/nested/OuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/nested/Temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/thirdPackage/Release.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/yolk/BigEgg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tenthChapter/yolk/Egg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thirdChapter/CustomTextFieldSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExecuteEverything.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExecuteEverything.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Bicycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Cycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Cycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Tricycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Tricycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Unicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Cycles/Unicycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Food/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Food/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Mouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Rodent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Rodents/Rodent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/StaticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/StaticTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/SubStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/SubStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/SuperStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/Upcasting/SuperStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Composing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Composing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Linked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Linked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/ReferenceCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/refCounter/Reff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/F_143.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/F_143.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seventhChapter/vehicles/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Refer/new" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../htmlTest/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../htmlTest/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Java_trainings" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="e#129#130#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindsCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>copyDelete</find>
+      <find>OutTwoDimensional</find>
+      <find>killEqual</find>
+      <find>OutputRow</find>
+      <find>OutRow</find>
+      <find>DeleteArray</find>
+      <find>getTrustedArray</find>
+      <find>userArray</find>
+      <find>ReportMethod</find>
+      <find>gc_Counter</find>
+      <find>desVar</find>
+      <find>codeWords</find>
+      <find>Object</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>DeleteArray</replace>
+      <replace>OutputTwoDimensional</replace>
+      <replace>finalArrayForm</replace>
+      <replace>OutputRow</replace>
+      <replace>OutputOneDimensional</replace>
+      <replace>EqualSeriesOfIncrementalNumbers</replace>
+      <replace>cleanArrayOfIncrementalSeries</replace>
+      <replace>incomeArray</replace>
+      <replace>EqualSeriesCleaner</replace>
+      <replace>GCounter</replace>
+      <replace>charVar</replace>
+      <replace>array</replace>
+      <replace>Event</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/OuterClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/nested/OuterClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/nested/Temp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Selector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Sequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Extension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/UpperCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FxTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Apply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/thirdChapter/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Appl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/thirdChapter/CustomTextFieldSample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Unsigned.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Incrementable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/MyIncrement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Call.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/CallBacks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Determine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Determine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Selection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Signable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/testSingletone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/Singletone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Asign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenhouseControl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenHouseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Handler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/LightHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/MoistureSupply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/WaterMist.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/HandlerExe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/GreenhouseHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/ClassWithInner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/Inheriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/yolk/Egg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/yolk/BigEgg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Closures/AnonClasses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/Gebril.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/Selectable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/Sequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Bsign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/SimpleCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/GenerateMind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindsCollection.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1235" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eleventhchapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java_trainings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eleventhchapter" type="462c0819:PsiDirectoryNode" />
+              <item name="greatminds" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551729597096" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Chmilevskiy/Hmilevskiy/3/Java/droid-manager" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/htmlTraining" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ninethChapter.Music5" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Seventh_Chapter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MindsCollection">
+    <configuration name="Bsign" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tenthChapter.Unsign.Bsign" />
+      <module name="Java_trainings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tenthChapter.Unsign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cake" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth_Chapter.Access.Cake" />
+      <module name="java_train" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sixth_Chapter.Access.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth_Chapter.Cake" />
+      <module name="java_train" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sixth_Chapter.Connect_Simulator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Gebril" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eleventhchapter.Gebril" />
+      <module name="Java_trainings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eleventhchapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MindsCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eleventhchapter.greatminds.MindsCollection" />
+      <module name="Java_trainings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eleventhchapter.greatminds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eleventhchapter.Sequence" />
+      <module name="Java_trainings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eleventhchapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eleventhchapter.SimpleCollection" />
+      <module name="Java_trainings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eleventhchapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Cake" />
+      <item itemvalue="Application.Gebril" />
+      <item itemvalue="Application.SimpleCollection" />
+      <item itemvalue="Application.Sequence" />
+      <item itemvalue="Application.Bsign" />
+      <item itemvalue="Application.MindsCollection" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MindsCollection" />
+        <item itemvalue="Application.SimpleCollection" />
+        <item itemvalue="Application.Bsign" />
+        <item itemvalue="Application.Sequence" />
+        <item itemvalue="Application.Gebril" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6f8f456-36a4-4d92-93f2-2d048daf54c2" name="Default Changelist" comment="" />
+      <created>1545941066406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545941066406</updated>
+      <workItem from="1545941068255" duration="797000" />
+      <workItem from="1545941915273" duration="6624000" />
+      <workItem from="1545970433251" duration="2611000" />
+      <workItem from="1546008395529" duration="1725000" />
+      <workItem from="1546019530434" duration="1059000" />
+      <workItem from="1546079707796" duration="8176000" />
+      <workItem from="1546115657555" duration="575000" />
+      <workItem from="1546118443935" duration="1368000" />
+      <workItem from="1546167642712" duration="4322000" />
+      <workItem from="1546270051343" duration="2221000" />
+      <workItem from="1546350562534" duration="4174000" />
+      <workItem from="1546366392470" duration="2362000" />
+      <workItem from="1546431589975" duration="5503000" />
+      <workItem from="1546455435457" duration="3367000" />
+      <workItem from="1546534742654" duration="3287000" />
+      <workItem from="1546586068249" duration="3707000" />
+      <workItem from="1546614801769" duration="3875000" />
+      <workItem from="1546718768499" duration="2422000" />
+      <workItem from="1546734192926" duration="2540000" />
+      <workItem from="1546789454567" duration="3905000" />
+      <workItem from="1546858572228" duration="625000" />
+      <workItem from="1546859230113" duration="599000" />
+      <workItem from="1546880398168" duration="1592000" />
+      <workItem from="1546964649325" duration="3516000" />
+      <workItem from="1547051562606" duration="790000" />
+      <workItem from="1547070113345" duration="1091000" />
+      <workItem from="1547138751621" duration="2548000" />
+      <workItem from="1547141442005" duration="1853000" />
+      <workItem from="1547309207443" duration="2972000" />
+      <workItem from="1547398311325" duration="2959000" />
+      <workItem from="1547445849870" duration="2013000" />
+      <workItem from="1547494705612" duration="1270000" />
+      <workItem from="1547626873975" duration="3284000" />
+      <workItem from="1547657593742" duration="2307000" />
+      <workItem from="1547734809651" duration="6358000" />
+      <workItem from="1547803852965" duration="2864000" />
+      <workItem from="1547895196954" duration="3085000" />
+      <workItem from="1547911295193" duration="2011000" />
+      <workItem from="1547990279809" duration="3008000" />
+      <workItem from="1548008036646" duration="736000" />
+      <workItem from="1548060192828" duration="674000" />
+      <workItem from="1548163995307" duration="813000" />
+      <workItem from="1548254305899" duration="1124000" />
+      <workItem from="1548266308267" duration="3003000" />
+      <workItem from="1548410151445" duration="7344000" />
+      <workItem from="1548433423240" duration="2572000" />
+      <workItem from="1548489660436" duration="915000" />
+      <workItem from="1548508959662" duration="1044000" />
+      <workItem from="1548528597581" duration="780000" />
+      <workItem from="1548605948968" duration="130000" />
+      <workItem from="1548606111654" duration="4015000" />
+      <workItem from="1548678235316" duration="1160000" />
+      <workItem from="1548694257866" duration="5872000" />
+      <workItem from="1548756204375" duration="3766000" />
+      <workItem from="1548843934764" duration="3318000" />
+      <workItem from="1548872126358" duration="291000" />
+      <workItem from="1548947768808" duration="9769000" />
+      <workItem from="1549020213446" duration="4746000" />
+      <workItem from="1549045321808" duration="4924000" />
+      <workItem from="1549094570405" duration="2037000" />
+      <workItem from="1549120124158" duration="2617000" />
+      <workItem from="1549204012411" duration="2774000" />
+      <workItem from="1549267695609" duration="6148000" />
+      <workItem from="1549292545105" duration="4982000" />
+      <workItem from="1549312009732" duration="1706000" />
+      <workItem from="1549398459251" duration="1841000" />
+      <workItem from="1549446719297" duration="2954000" />
+      <workItem from="1549470485895" duration="2693000" />
+      <workItem from="1549481550811" duration="1621000" />
+      <workItem from="1549546386507" duration="1933000" />
+      <workItem from="1549561083079" duration="17000" />
+      <workItem from="1549561134701" duration="1552000" />
+      <workItem from="1549610713383" duration="2544000" />
+      <workItem from="1549631267227" duration="2122000" />
+      <workItem from="1549652112775" duration="3183000" />
+      <workItem from="1549708536628" duration="529000" />
+      <workItem from="1549730448098" duration="5756000" />
+      <workItem from="1549796695907" duration="1931000" />
+      <workItem from="1549806099948" duration="4651000" />
+      <workItem from="1549826794302" duration="4447000" />
+      <workItem from="1549867805312" duration="4463000" />
+      <workItem from="1549881624207" duration="2386000" />
+      <workItem from="1549897790274" duration="2300000" />
+      <workItem from="1549909082668" duration="3641000" />
+      <workItem from="1549954747756" duration="611000" />
+      <workItem from="1549966530077" duration="2517000" />
+      <workItem from="1549971928750" duration="4178000" />
+      <workItem from="1550000250532" duration="3301000" />
+      <workItem from="1550060289082" duration="3529000" />
+      <workItem from="1550211144346" duration="2273000" />
+      <workItem from="1550231777291" duration="4035000" />
+      <workItem from="1550261429289" duration="1587000" />
+      <workItem from="1550309423668" duration="214000" />
+      <workItem from="1550389458376" duration="8168000" />
+      <workItem from="1550411518296" duration="2944000" />
+      <workItem from="1550610529823" duration="5430000" />
+      <workItem from="1550670169858" duration="897000" />
+      <workItem from="1550683332882" duration="4369000" />
+      <workItem from="1550701604832" duration="2334000" />
+      <workItem from="1550746265853" duration="3354000" />
+      <workItem from="1550767603033" duration="2285000" />
+      <workItem from="1550831019343" duration="3017000" />
+      <workItem from="1550873210795" duration="1911000" />
+      <workItem from="1550925697577" duration="1659000" />
+      <workItem from="1550927790760" duration="607000" />
+      <workItem from="1550929009560" duration="599000" />
+      <workItem from="1550935104601" duration="1119000" />
+      <workItem from="1550938465581" duration="1713000" />
+      <workItem from="1550944501987" duration="6628000" />
+      <workItem from="1551005793626" duration="199000" />
+      <workItem from="1551024755038" duration="4417000" />
+      <workItem from="1551102210701" duration="71000" />
+      <workItem from="1551105285368" duration="11000" />
+      <workItem from="1551117132719" duration="3602000" />
+      <workItem from="1551186384539" duration="1517000" />
+      <workItem from="1551215027249" duration="3746000" />
+      <workItem from="1551218978514" duration="782000" />
+      <workItem from="1551299063074" duration="8667000" />
+      <workItem from="1551343406422" duration="714000" />
+      <workItem from="1551348724861" duration="9356000" />
+      <workItem from="1551377814775" duration="2166000" />
+      <workItem from="1551388341311" duration="4591000" />
+      <workItem from="1551444441092" duration="92000" />
+      <workItem from="1551473538003" duration="1706000" />
+      <workItem from="1551538530975" duration="4743000" />
+      <workItem from="1551559432622" duration="1869000" />
+      <workItem from="1551566095378" duration="605000" />
+      <workItem from="1551570779705" duration="576000" />
+      <workItem from="1551643417109" duration="3261000" />
+      <workItem from="1551722616403" duration="6203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="365362000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919742" visible="true" weight="0.30879912" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008026" side_tool="true" weight="0.21804096" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4986165" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4537908" weight="0.3563715" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49197567" weight="0.24190065" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991699" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4997233" weight="0.32829374" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5462092" side_tool="true" visible="true" weight="0.32397407" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.19037078" weight="0.32397407" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919742" weight="0.26231322" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008026" side_tool="true" weight="0.21804096" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4991699" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5146652" visible="true" weight="0.3401728" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49197567" weight="0.24190065" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991699" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4997233" weight="0.32829374" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.75207525" side_tool="true" weight="0.32721382" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.24792473" weight="0.32721382" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Fiveth_Chapter/VarLength.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/innerClassesNUpcast/StringsManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" selection-start-line="16" selection-start-column="6" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Doc_train/SeriesDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/java_train.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FxTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/lib/openjfx/jre/lib/ext/jfxrt/javafx/scene/layout/StackPane.class" />
+    <entry file="file://$APPLICATION_HOME_DIR$/lib/openjfx/jre/lib/ext/jfxrt/javafx/event/EventHandler.class" />
+    <entry file="file:///usr/lib/jvm/java-8-openjdk-amd64/lib/ext/jfxrt/javafx/application/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="118" lean-forward="true" selection-start-line="5" selection-end-line="118" />
+          <folding>
+            <element signature="e#0#3570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Appl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thirdChapter/CustomTextFieldSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#487#649#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/linkBetween/Sequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ninethChapter/adapters/UpperCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Processable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ninethChapter/adapters/Apply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/MyIncrement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Call.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/CallBacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Callee2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Determine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Selection/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Extension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/testSingletone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Outer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Singletone/Singletone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/EventController/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenHouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="66" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/RandomRepo/eventhandler/Event.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/EventController/GreenhouseControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/WaterMist.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/GreenhouseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="114" selection-start-line="114" selection-end-line="115" />
+          <folding>
+            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/eventhandler/HandlerExe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/ClassWithInner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/yolk/Egg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/inheritinginner/Inheriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/yolk/BigEgg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/Incrementable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Closures/AnonClasses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/Sequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/Selectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Signable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Asign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenthChapter/Unsign/Bsign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#194#204#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/Gebril.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/SimpleCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="e#367#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eleventhchapter/greatminds/MindsCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Java_trainings</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
