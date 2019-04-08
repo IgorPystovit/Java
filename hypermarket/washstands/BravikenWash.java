@@ -1,14 +1,13 @@
 package com.epam.hypermarket.washstands;
 
 import com.epam.hypermarket.Colors;
-import com.epam.hypermarket.washstands.Washstand;
 
-public class BravikenWash extends Washstand {
-    private final int height = 90;
-    private final int width = 300;
-    private final int length = 60;
-    private final Colors color = Colors.Green;
-    private int cost = 500;
+public class BravikenWash extends WashStand {
+    private final int height = 75;
+    private final int width = 30;
+    private final int length = 30;
+    private final Colors color = Colors.Red;
+    private int cost = 1000;
 
     @Override
     public void setCost(int cost) {

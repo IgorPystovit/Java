@@ -2,12 +2,12 @@ package com.epam.hypermarket.washstands;
 
 import com.epam.hypermarket.Colors;
 
-public class OmneswickWash extends WashStand {
-    private final int height = 90;
-    private final int width = 60;
-    private final int length = 30;
-    private final Colors color = Colors.Green;
-    private int cost = 300;
+public class HagavikenWash extends WashStand{
+    private final int height = 10;
+    private final int width = 20;
+    private final int length = 90;
+    private final Colors color = Colors.Red;
+    private int cost = 20;
 
     @Override
     public void setCost(int cost) {
@@ -38,5 +38,4 @@ public class OmneswickWash extends WashStand {
     public int getLength() {
         return length;
     }
-
 }

@@ -1,32 +1,26 @@
-package com.epam.hypermarket.washstands;
+package com.epam.hypermarket.flooringtile;
 
 import com.epam.hypermarket.Colors;
 
-public class OmneswickWash extends WashStand {
-    private final int height = 90;
-    private final int width = 60;
-    private final int length = 30;
+public class CarraraTile extends FlooringTile {
+    private final int width = 10;
+    private final int length = 20;
     private final Colors color = Colors.Green;
-    private int cost = 300;
+    private double cost = 1.70;
 
     @Override
-    public void setCost(int cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 
     @Override
-    public int getCost() {
+    public double getCost() {
         return cost;
     }
 
     @Override
     public Colors getColor() {
         return color;
-    }
-
-    @Override
-    public int getHeight() {
-        return height;
     }
 
     @Override
@@ -38,5 +32,4 @@ public class OmneswickWash extends WashStand {
     public int getLength() {
         return length;
     }
-
 }
