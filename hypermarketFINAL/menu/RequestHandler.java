@@ -4,7 +4,6 @@ import com.epam.hypermarket.Hypermarket;
 import com.epam.hypermarket.ProductSelection;
 import com.epam.hypermarket.RecommendationList;
 import com.epam.hypermarket.selectable.Selectable;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

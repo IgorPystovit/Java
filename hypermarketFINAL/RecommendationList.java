@@ -13,6 +13,11 @@ public class RecommendationList {
     private static Scanner scan = new Scanner(System.in);
     private static List<Selectable> recommendedProductsList ;
 
+    public static List<Selectable> getRecommendationList(Recommendable productType, SelectableFactory factory){
+        Set<Selectable> productSet = factory.getProducts();
+        return productType.formRecommendationList(productSet);
+    }
+
     public static Recommendable woodenFurniture = new Recommendable() {
         //Selection parameters
         Double customCost = 0.0;
@@ -137,7 +142,7 @@ public class RecommendationList {
 
             if (hasCustomColor()){
                 for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
-                    if (!iTempArticle.getMaterial().equals(customColor)){
+                    if (!iTempArticle.getColor().equals(customColor)){
                         recommendedProductsList.remove(iTempArticle);
                     }
                 }
@@ -147,8 +152,5 @@ public class RecommendationList {
         }
     };
 
-    public static List<Selectable> getRecommendationList(Recommendable productType, SelectableFactory factory){
-        Set<Selectable> productSet = factory.getProducts();
-        return productType.formRecommendationList(productSet);
-    }
+
 }

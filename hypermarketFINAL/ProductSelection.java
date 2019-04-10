@@ -68,6 +68,4 @@ public class ProductSelection {
         }while(true);
         return recommendableProductType;
     }
-
-//    private RequestHandler request
 }
