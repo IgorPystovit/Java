@@ -35,7 +35,7 @@ public class RequestHandler {
         if (request.equals("Show products")){
             Hypermarket.printProducts();
         }else if (request.equals("Recommendation list")) {
-            recommendations = RecommendationList.getRecommendationList(ProductSelection.productTypeSelector(),ProductSelection.selectProductFactory());
+            recommendations = RecommendationList.getRecommendationList(ProductSelection.productTypeSelector(),ProductSelection.articleTypeSelector());
             printRecommendations(recommendations);
         }else{
             System.out.println("No such request! Please Retry! \n");

@@ -6,7 +6,6 @@ import com.epam.hypermarket.tuningparameters.Shape;
 import com.epam.hypermarket.tuningparameters.Size;
 import com.epam.hypermarket.ProductManager;
 import com.epam.hypermarket.selectable.Selectable;
-import com.epam.hypermarket.selectable.SelectableFactory;
 
 import java.util.Set;
 
@@ -27,13 +26,9 @@ public class FlooringTile extends SanitaryEngineering implements Selectable {
         this.shape = shape;
     }
 
-    public static SelectableFactory flooringTileFactory = new SelectableFactory() {
-        @Override
-        public Set<Selectable> getProducts(){
-            return ProductManager.flooringTileSet;
-        }
-
-    };
+    public Set<Selectable> construct(){
+        return ProductManager.flooringTileSet;
+    }
 
     public Double getCost() {
         return cost;

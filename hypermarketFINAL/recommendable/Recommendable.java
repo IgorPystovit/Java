@@ -5,5 +5,5 @@ import java.util.List;
 import java.util.Set;
 
 public interface Recommendable {
-    List<Selectable> formRecommendationList(Set<Selectable> productSet);
+    List<Selectable> formRecommendationList(Selectable articleType);
 }

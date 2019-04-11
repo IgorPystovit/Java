@@ -1,11 +1,12 @@
 package com.epam.hypermarket;
 
 import com.epam.hypermarket.recommendable.Recommendable;
+import com.epam.hypermarket.sanitaryengineering.SanitaryEngineering;
 import com.epam.hypermarket.selectable.Selectable;
-import com.epam.hypermarket.selectable.SelectableFactory;
 import com.epam.hypermarket.tuningparameters.Colors;
 import com.epam.hypermarket.tuningparameters.Material;
 import com.epam.hypermarket.tuningparameters.Shape;
+import com.epam.hypermarket.woodenfurniture.WoodenFurniture;
 
 import java.util.*;
 
@@ -13,9 +14,9 @@ public class RecommendationList {
     private static Scanner scan = new Scanner(System.in);
     private static List<Selectable> recommendedProductsList ;
 
-    public static List<Selectable> getRecommendationList(Recommendable productType, SelectableFactory factory){
-        Set<Selectable> productSet = factory.getProducts();
-        return productType.formRecommendationList(productSet);
+    public static List<Selectable> getRecommendationList(Recommendable productType, Selectable articleType){
+        recommendedProductsList = productType.formRecommendationList(articleType);
+        return recommendedProductsList;
     }
 
     public static Recommendable woodenFurniture = new Recommendable() {
@@ -62,36 +63,36 @@ public class RecommendationList {
         }
 
         @Override
-        public List<Selectable> formRecommendationList(Set<Selectable> productsSet) {
-            recommendedProductsList = new ArrayList<>(productsSet);
-            Iterator<Selectable> it = productsSet.iterator();
+        public List<Selectable> formRecommendationList(Selectable articleType) {
+            List<Selectable> recommendations = new ArrayList<>(WoodenFurniture.factory.createProducts(articleType));
+
             setSelectionParameters();
 
             if (hasCustomCost()){
-                for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
+                for (Selectable iTempArticle : new ArrayList<>(recommendations)){
                     if (iTempArticle.getCost() > customCost){
-                        recommendedProductsList.remove(iTempArticle);
+                        recommendations.remove(iTempArticle);
                     }
                 }
             }
 
             if (hasCustomMaterial()){
-                for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
+                for (Selectable iTempArticle : new ArrayList<>(recommendations)){
                     if (!iTempArticle.getMaterial().equals(customMaterial)){
-                        recommendedProductsList.remove(iTempArticle);
+                        recommendations.remove(iTempArticle);
                     }
                 }
             }
 
             if (hasCustomShape()){
-                for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
+                for (Selectable iTempArticle : new ArrayList<>(recommendations)){
                     if (!iTempArticle.getShape().equals(customShape)){
-                        recommendedProductsList.remove(iTempArticle);
+                        recommendations.remove(iTempArticle);
                     }
                 }
             }
 
-            return recommendedProductsList;
+            return recommendations;
         }
     };
 
@@ -126,29 +127,28 @@ public class RecommendationList {
         }
 
         @Override
-        public List<Selectable> formRecommendationList(Set<Selectable> productSet) {
-            recommendedProductsList = new ArrayList<>(Collections.emptyList());
-            Iterator<Selectable> it = productSet.iterator();
+        public List<Selectable> formRecommendationList(Selectable articleType) {
+           List<Selectable> recommendations = new ArrayList<>(SanitaryEngineering.factory.createProducts(articleType));
 
-            setSelectionParameters();
+           setSelectionParameters();
 
-            if (hasCustomCost()){
-                for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
-                    if (iTempArticle.getCost() > customCost){
-                        recommendedProductsList.remove(iTempArticle);
-                    }
-                }
-            }
+           if (hasCustomCost()){
+               for (Selectable iTempArticle : new ArrayList<>(recommendations)){
+                   if (iTempArticle.getCost() > customCost){
+                       recommendations.remove(iTempArticle);
+                   }
+               }
+           }
 
-            if (hasCustomColor()){
-                for (Selectable iTempArticle : new ArrayList<>(recommendedProductsList)){
-                    if (!iTempArticle.getColor().equals(customColor)){
-                        recommendedProductsList.remove(iTempArticle);
-                    }
-                }
-            }
+           if (hasCustomColor()){
+               for (Selectable iTempArticle : new ArrayList<>(recommendations)){
+                   if (!iTempArticle.getColor().equals(customColor)){
+                       recommendations.remove(iTempArticle);
+                   }
+               }
+           }
 
-            return recommendedProductsList;
+           return recommendations;
         }
     };
 

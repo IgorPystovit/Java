@@ -6,7 +6,6 @@ import com.epam.hypermarket.tuningparameters.Shape;
 import com.epam.hypermarket.tuningparameters.Size;
 import com.epam.hypermarket.ProductManager;
 import com.epam.hypermarket.selectable.Selectable;
-import com.epam.hypermarket.selectable.SelectableFactory;
 
 import java.util.Set;
 
@@ -28,12 +27,9 @@ public class WashStand extends SanitaryEngineering implements Selectable {
         this.cost = cost;
     }
 
-    public static SelectableFactory washStandFactory = new SelectableFactory() {
-        @Override
-        public Set<Selectable> getProducts() {
-            return ProductManager.washStandSet;
-        }
-    };
+    public Set<Selectable> construct(){
+        return ProductManager.washStandSet;
+    }
 
     public String getNameOfWashStand() {
         return nameOfWashStand;

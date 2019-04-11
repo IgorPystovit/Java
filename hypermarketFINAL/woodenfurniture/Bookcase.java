@@ -6,7 +6,7 @@ import com.epam.hypermarket.tuningparameters.Shape;
 import com.epam.hypermarket.tuningparameters.Size;
 import com.epam.hypermarket.ProductManager;
 import com.epam.hypermarket.selectable.Selectable;
-import com.epam.hypermarket.selectable.SelectableFactory;
+
 import java.util.Set;
 
 public class Bookcase extends WoodenFurniture implements Selectable {
@@ -27,12 +27,9 @@ public class Bookcase extends WoodenFurniture implements Selectable {
         this.material = material;
     }
 
-    public static SelectableFactory bookCaseFactory = new SelectableFactory() {
-        @Override
-        public Set<Selectable> getProducts(){
-            return ProductManager.bookcasesSet;
-        }
-    };
+    public Set<Selectable> construct(){
+        return ProductManager.bookcasesSet;
+    }
 
     public Colors getColor() {
         return color;
