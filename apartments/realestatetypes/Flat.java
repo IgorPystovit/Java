@@ -1,29 +1,85 @@
 package com.epam.apartments.realestatetypes;
 
-import com.epam.apartments.Address;
-import com.epam.apartments.InfrastructureObject;
-import com.epam.apartments.InfrastructuresType;
-import com.epam.apartments.RealEstate;
+import com.epam.apartments.*;
+import com.epam.apartments.apartmentexceptions.NoApartmentAreaException;
+import com.epam.apartments.apartmentexceptions.NoPriceException;
+import com.epam.apartments.apartmentexceptions.NoRoomsNumException;
 
 import java.util.*;
 
 public class Flat extends RealEstate {
     private Address flatAddress;
     private double flatArea;
-    private boolean furnishing;
     private int bedroomsNum;
-    private double rentPrice;
-    private List<InfrastructureObject> infrastructure;
+    private String flatPrice;
+    private List<InfrastructureObject> infrastructures;
+    private final EstateType estateType = EstateType.FLAT;
 
     public Flat(){}
-    public Flat(Address flatAddress, double flatArea, boolean furnishing, int bedroomsNum, double rentPrice, List<InfrastructureObject> infrustructure){
-        this.flatAddress = flatAddress;
-        this.flatArea = flatArea;
-        this.furnishing = furnishing;
-        this.bedroomsNum = bedroomsNum;
-        this.rentPrice = rentPrice;
-        this.infrastructure = infrustructure;
+    public Flat(FlatBuilder flatBuilder){
+        this.flatAddress = flatBuilder.address;
+        this.flatArea = flatBuilder.area;
+        this.bedroomsNum = flatBuilder.bedroomsNum;
+        this.flatPrice = flatBuilder.price;
+        this.infrastructures = flatBuilder.infrastructureObjectList;
+    }
 
+    public static class FlatBuilder{
+        private Address address;
+        private double area;
+        private int bedroomsNum;
+        private List<InfrastructureObject> infrastructureObjectList = new LinkedList<>();
+        private String price;
+
+        public FlatBuilder(){}
+        public FlatBuilder(String price, double area){
+            this.price = price;
+            this.area = area;
+        }
+
+        public FlatBuilder address(Address address){
+            this.address = address;
+            return  this;
+        }
+
+        public FlatBuilder bedrooms(int bedroomsNum){
+            this.bedroomsNum = bedroomsNum;
+            return this;
+        }
+
+        public FlatBuilder infrastructure(InfrastructureObject... infrastructure){
+            infrastructureObjectList.addAll(Arrays.asList(infrastructure));
+            return this;
+        }
+
+        public Flat build(){
+            Flat flat = new Flat(this);
+            try{
+                validateFlat(flat);
+            } catch (NoRoomsNumException e){
+                e.printStackTrace();
+            } catch (NoPriceException e){
+                e.printStackTrace();
+            } catch (NoApartmentAreaException e){
+                e.printStackTrace();
+            }
+
+            return flat;
+        }
+
+        private void validateFlat(Flat flat) throws NoApartmentAreaException,NoPriceException,NoRoomsNumException{
+            if (flat.bedroomsNum <= 0){
+                throw new NoRoomsNumException();
+            }
+
+            if (flat.flatArea <= 0){
+                throw new NoApartmentAreaException();
+            }
+
+            if (Integer.parseInt(flat.flatPrice) <= 0){
+                throw new NoPriceException();
+            }
+        }
     }
 
     public Address getFlatAddress() {
@@ -34,55 +90,38 @@ public class Flat extends RealEstate {
         return flatArea;
     }
 
-    public boolean getfurnishingState() {
-        return furnishing;
-    }
-
     public int getBedroomsNum() {
         return bedroomsNum;
     }
 
-    public double getRentPrice() {
-        return rentPrice;
+    public double getflatPrice() {
+        return Double.parseDouble(flatPrice);
     }
 
     public List<InfrastructureObject> getInfrastructure() {
-        return infrastructure;
+        return infrastructures;
     }
+
+    public EstateType getEstateType() {
+        return estateType;
+    }
+
 
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Address: ").append(flatAddress).append(";\n");
         sb.append("Flat area: ").append(flatArea).append(" sq m;\n");
-
-        if (furnishing){
-            sb.append("Furnishing: furnished;\n");
-        }else{
-            sb.append("Furnishing: not furnished;\n");
-        }
-
         sb.append("Bedrooms: ").append(bedroomsNum).append(";\n");
         sb.append("Infrastructure: \n");
-        if (infrastructure.size() != 0){
-            for (InfrastructureObject temp : infrastructure){
-                sb.append("  Distance to ").append(temp.getInfrastructureObjectName()).append(" - ").append(temp.getDistance()).append(" m;\n");
+        if (infrastructures.size() != 0){
+            for (InfrastructureObject temp : infrastructures){
+                sb.append("  Distance to ").append(temp.getInfrastructuresType().toString().toLowerCase()).append(" - ").append(temp.getDistance()).append(" m;\n");
             }
+        }else{
+            sb.append("There are no infrustructure objects nearby\n");
         }
-        sb.append("Rent price: ").append(rentPrice).append("$ pw;\n");
+        sb.append("Rent price: ").append(flatPrice).append("$ pw;\n");
         return sb.toString();
-    }
-
-    public static void main(String[] args) {
-        Flat flat = new Flat(new Address("Ukraine", "Lviv", "Hetmana Mazepy", 5), 435.2,
-                true, 3, 1400.00, new LinkedList<>(Arrays.asList(
-                new InfrastructureObject(InfrastructuresType.HYPERMARKET, "Spartak hypermarket", 600.0),
-                new InfrastructureObject(InfrastructuresType.SCHOOL, "School №14", 534.0))));
-        Flat flat1 = new Flat(new Address("Great Britain", "London", "Linkoln St.", 25), 290,
-                true, 4, 750, new LinkedList<>(Arrays.asList(
-                new InfrastructureObject(InfrastructuresType.SCHOOL, "School №19", 900),
-                new InfrastructureObject(InfrastructuresType.HYPERMARKET, "Victoria Gardens hypermarket", 800))));
-        System.out.println(flat);
-        System.out.println(flat1);
     }
 }

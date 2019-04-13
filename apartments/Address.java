@@ -36,9 +36,4 @@ public class Address {
         sb.append(country).append(", ").append(town).append(", ").append(street).append(" ").append(houseNumber);
         return sb.toString();
     }
-
-    public static void main(String[] args) {
-        Address address = new Address("Ukraine","Lviv","Mazepy",5);
-        System.out.println(address);
-    }
 }
