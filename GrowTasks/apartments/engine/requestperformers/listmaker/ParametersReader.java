@@ -28,10 +28,16 @@ public class ParametersReader {
     }
 
     public double getCustomPrice() {
-        if ((customPrice.equals("")) || (customPrice == null)){
+        double priceValue = 0.0;
+        if (customPrice.equals("")){
             return 0.0;
         }
-        return Math.abs(Double.parseDouble(customPrice));
+        try{
+            priceValue = Math.abs(Double.parseDouble(customPrice));
+        } catch (NumberFormatException e){
+            return 0.0;
+        }
+        return priceValue;
     }
 
     private void estateTypeReader(){
@@ -52,12 +58,8 @@ public class ParametersReader {
     }
 
     private void priceReader(){
-        try{
             System.out.println("\nPlease enter price of "+customEstateType.toString().toLowerCase()+"(Press Enter to ignore)");
             customPrice = scan.nextLine();
-        }catch (Exception e){
-            customPrice = null;
-        }
     }
 
     private void areaReader(){
@@ -78,6 +80,12 @@ public class ParametersReader {
             InfrastructureObject infrastructureObject = new InfrastructureObject();
             try{
                 System.out.println("\nEnter type of object");
+                System.out.println("Available object types:\n"+
+                        " - School;\n" +
+                        " - Kindergarten;\n" +
+                        " - Hypermarket;\n" +
+                        " - Cinema;\n" +
+                        " - Theatre;\n");
                 objectType = InfrastructureObjectType.valueOf(scan.nextLine().toUpperCase());
                 infrastructureObject.setInfrastructureObjectType(objectType);
 

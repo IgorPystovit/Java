@@ -15,34 +15,26 @@ public class Menu {
     private Scanner scan = new Scanner(System.in);
 
     public List<RealEstate> requestListener(){
-        String request = null;
         RequestTypes requestType = null;
         List<RealEstate> customEstateList = new LinkedList<>();
         System.out.println("Welcome to real estate customer system");
         System.out.println("Please, type your request below");
-        do{
-            System.out.println("Available requests:\n" +
-                    " - Show all (to show all estate available);\n" +
-                    " - Sort (to sort all available estate or certain type of estate by certain sort parameter);\n" +
-                    " - Form recommendations (to form recommendation list based on your privileges\n" +
-                    " - Exit (to exit program)");
-            request = scan.nextLine();
-            request = request.toUpperCase();
-            if (request.equals("SHOW ALL")){
-                requestType = RequestTypes.SHOW;
-            }else if (request.equals("SORT")){
-                requestType = RequestTypes.SORT;
-            }else if (request.equals("FORM RECOMMENDATIONS")){
-                requestType = RequestTypes.FORM;
-            }else if (!request.equals("EXIT")){
-                System.out.println("No such request! Please retry!");
-                continue;
-            }
-            if (requestType != null){
-                customEstateList = executeRequest(requestType);
-                printRecommendations(customEstateList);
-            }
-        }while (!request.equals("EXIT"));
+        System.out.println("Available requests:\n" +
+                " - Show all (to show all estate available);\n" +
+                " - Sort (to sort all available estate or certain type of estate by certain sort parameter);\n" +
+                " - Form recommendations (to form recommendation list based on your privileges;\n");
+        String request = scan.nextLine().toUpperCase();
+        if (request.equals("SHOW ALL")){
+            requestType = RequestTypes.SHOW;
+        }else if (request.equals("SORT")){
+            requestType = RequestTypes.SORT;
+        }else if (request.equals("FORM RECOMMENDATIONS")){
+            requestType = RequestTypes.FORM;
+        }else{
+            System.out.println("No such request!");
+        }
+        customEstateList = executeRequest(requestType);
+        printRecommendations(customEstateList);
         return customEstateList;
     }
 
@@ -68,7 +60,16 @@ public class Menu {
                         " - price;\n" +
                         " - distance (to infrastructure object);\n" +
                         " - area;\n");
-                SortParameter sortParameter = SortParameter.valueOf(scan.next().toUpperCase());
+                SortParameter sortParameter;
+                do{
+                    try{
+                        sortParameter = SortParameter.valueOf(scan.next().toUpperCase());
+                    } catch (IllegalArgumentException e){
+                        System.out.println("Wrong type of sort parameter was entered! Please retry!");
+                        continue;
+                    }
+                    break;
+                }while (true);
                 estateList = new EstateSorter(sortParameter).performRequest();
                 break;
             case FORM:

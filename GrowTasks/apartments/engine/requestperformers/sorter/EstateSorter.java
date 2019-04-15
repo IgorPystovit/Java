@@ -31,7 +31,13 @@ public class EstateSorter implements RequestHandler {
                 realEstateList = sortByPrice(realEstateManager.getEstateList());
                 break;
             case DISTANCE:
-                System.out.println("Please enter type of object");
+                System.out.println("Please enter type of object\n");
+                System.out.println("Available object types:\n"+
+                        " - School;\n" +
+                        " - Kindergarten;\n" +
+                        " - Hypermarket;\n" +
+                        " - Cinema;\n" +
+                        " - Theatre;\n");
                 InfrastructureObjectType objectType;
                 try {
                     objectType = InfrastructureObjectType.valueOf(scan.next().toUpperCase());

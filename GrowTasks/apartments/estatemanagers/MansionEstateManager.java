@@ -45,5 +45,25 @@ public class MansionEstateManager {
                     .numberOfFloors(1)
                     .infrustructure(
                             new InfrastructureObject(InfrastructureObjectType.CINEMA,500))
+                    .build(),
+            new Mansion.MansionBuilder("1500000",1345)
+                    .address(new Address("Ukraine","Lviv","Karpinskoho St.",43))
+                    .bathroomsNum(2)
+                    .bedroomsNum(5)
+                    .numberOfFloors(2)
+                    .infrustructure(
+                            new InfrastructureObject(InfrastructureObjectType.THEATRE,400),
+                            new InfrastructureObject(InfrastructureObjectType.SCHOOL,600),
+                            new InfrastructureObject(InfrastructureObjectType.HYPERMARKET,750))
+                    .build(),
+            new Mansion.MansionBuilder("2000000",1670)
+                    .address(new Address("Ukraine","Lviv","Brullov St.",30))
+                    .bathroomsNum(3)
+                    .bedroomsNum(8)
+                    .numberOfFloors(4)
+                    .infrustructure(
+                            new InfrastructureObject(InfrastructureObjectType.THEATRE,600),
+                            new InfrastructureObject(InfrastructureObjectType.CINEMA,450),
+                            new InfrastructureObject(InfrastructureObjectType.SCHOOL,350))
                     .build()));
 }
