@@ -1,27 +1,30 @@
 package com.epam.apartments.realestatetypes;
 
-import com.epam.apartments.*;
+import com.epam.apartments.address.Address;
 import com.epam.apartments.apartmentexceptions.NoApartmentAreaException;
 import com.epam.apartments.apartmentexceptions.NoPriceException;
 import com.epam.apartments.apartmentexceptions.NoRoomsNumException;
+import com.epam.apartments.infrastructure.InfrastructureObject;
+import com.epam.apartments.infrastructure.InfrastructureObjectType;
+import com.epam.apartments.realestate.RealEstate;
 
 import java.util.*;
 
 public class Flat extends RealEstate {
-    private Address flatAddress;
-    private double flatArea;
-    private int bedroomsNum;
-    private String flatPrice;
-    private List<InfrastructureObject> infrastructures;
     private final EstateType estateType = EstateType.FLAT;
+    private Address address;
+    private double area;
+    private int bedroomsNum;
+    private String price;
+    private List<InfrastructureObject> infrastructureObjectList;
 
     public Flat(){}
     public Flat(FlatBuilder flatBuilder){
-        this.flatAddress = flatBuilder.address;
-        this.flatArea = flatBuilder.area;
+        this.address = flatBuilder.address;
+        this.area = flatBuilder.area;
         this.bedroomsNum = flatBuilder.bedroomsNum;
-        this.flatPrice = flatBuilder.price;
-        this.infrastructures = flatBuilder.infrastructureObjectList;
+        this.price = flatBuilder.price;
+        this.infrastructureObjectList = flatBuilder.infrastructureObjectList;
     }
 
     public static class FlatBuilder{
@@ -72,36 +75,50 @@ public class Flat extends RealEstate {
                 throw new NoRoomsNumException();
             }
 
-            if (flat.flatArea <= 0){
+            if (flat.area <= 0){
                 throw new NoApartmentAreaException();
             }
 
-            if (Integer.parseInt(flat.flatPrice) <= 0){
+            if (Integer.parseInt(flat.price) <= 0){
                 throw new NoPriceException();
             }
         }
     }
 
-    public Address getFlatAddress() {
-        return flatAddress;
+    @Override
+    public double getDistanceToObject(InfrastructureObjectType objectType){
+        for (InfrastructureObject iTempObject : infrastructureObjectList){
+            if (iTempObject.getInfrastructureObjectType().equals(objectType)){
+                return iTempObject.getDistance();
+            }
+        }
+        return 0.0;
+    }
+    
+    public Address getAddress() {
+        return address;
     }
 
-    public double getFlatArea() {
-        return flatArea;
+    @Override
+    public double getArea() {
+        return area;
     }
 
     public int getBedroomsNum() {
         return bedroomsNum;
     }
 
-    public double getflatPrice() {
-        return Double.parseDouble(flatPrice);
+    @Override
+    public double getPrice() {
+        return Double.parseDouble(price);
     }
 
-    public List<InfrastructureObject> getInfrastructure() {
-        return infrastructures;
+    @Override
+    public List<InfrastructureObject> getInfrastructureObjectList() {
+        return infrastructureObjectList;
     }
 
+    @Override
     public EstateType getEstateType() {
         return estateType;
     }
@@ -110,18 +127,19 @@ public class Flat extends RealEstate {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Address: ").append(flatAddress).append(";\n");
-        sb.append("Flat area: ").append(flatArea).append(" sq m;\n");
+        sb.append(firstCharToUpperCase(getEstateType().toString())).append("\n\n");
+        sb.append("Address: ").append(address).append(";\n");
+        sb.append("Flat area: ").append(area).append(" sq m;\n");
         sb.append("Bedrooms: ").append(bedroomsNum).append(";\n");
         sb.append("Infrastructure: \n");
-        if (infrastructures.size() != 0){
-            for (InfrastructureObject temp : infrastructures){
-                sb.append("  Distance to ").append(temp.getInfrastructuresType().toString().toLowerCase()).append(" - ").append(temp.getDistance()).append(" m;\n");
+        if (infrastructureObjectList.size() != 0){
+            for (InfrastructureObject temp : infrastructureObjectList){
+                sb.append("  Distance to ").append(temp.getInfrastructureObjectType().toString().toLowerCase()).append(" - ").append(temp.getDistance()).append(" m;\n");
             }
         }else{
-            sb.append("There are no infrustructure objects nearby\n");
+            sb.append("  There are no infrustructure objects nearby;\n");
         }
-        sb.append("Rent price: ").append(flatPrice).append("$ pw;\n");
+        sb.append("Rent price: ").append(price).append("$ pw;\n");
         return sb.toString();
     }
 }

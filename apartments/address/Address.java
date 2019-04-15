@@ -1,4 +1,4 @@
-package com.epam.apartments;
+package com.epam.apartments.address;
 
 public class Address {
     private String country;

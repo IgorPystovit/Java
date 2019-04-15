@@ -1,12 +1,12 @@
 package com.epam.apartments.realestatetypes;
 
-import com.epam.apartments.Address;
-import com.epam.apartments.EstateType;
-import com.epam.apartments.InfrastructureObject;
-import com.epam.apartments.RealEstate;
+import com.epam.apartments.address.Address;
 import com.epam.apartments.apartmentexceptions.NoApartmentAreaException;
 import com.epam.apartments.apartmentexceptions.NoPriceException;
 import com.epam.apartments.apartmentexceptions.NoRoomsNumException;
+import com.epam.apartments.infrastructure.InfrastructureObject;
+import com.epam.apartments.infrastructure.InfrastructureObjectType;
+import com.epam.apartments.realestate.RealEstate;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -16,20 +16,20 @@ public class Penthouse extends RealEstate {
     private final EstateType estateType = EstateType.PENTHOUSE;
     private int floorNum;
     private boolean hasTerrace;
-    private double penthouseArea;
+    private double area;
     private int bedroomsNum;
-    private String penthousePrice;
-    private List<InfrastructureObject> infrastructures = new LinkedList<>();
+    private String price;
+    private List<InfrastructureObject> infrastructureObjectList;
     private Address address;
 
     public Penthouse(){}
     public Penthouse(PenthouseBuilder penthouseBuilder){
-        this.penthouseArea = penthouseBuilder.area;
+        this.area = penthouseBuilder.area;
         this.bedroomsNum = penthouseBuilder.bedroomsNum;
         this.floorNum = penthouseBuilder.floorNum;
         this.hasTerrace = penthouseBuilder.hasTerrace;
-        this.penthousePrice = penthouseBuilder.price;
-        this.infrastructures = penthouseBuilder.infrastructureObjectList;
+        this.price = penthouseBuilder.price;
+        this.infrastructureObjectList = penthouseBuilder.infrastructureObjectList;
         this.address = penthouseBuilder.address;
     }
 
@@ -93,22 +93,34 @@ public class Penthouse extends RealEstate {
                 throw new NoRoomsNumException();
             }
 
-            if (penthouse.penthouseArea <= 0){
+            if (penthouse.area <= 0){
                 throw new NoApartmentAreaException();
             }
 
-            if (Integer.parseInt(penthouse.penthousePrice) <= 0){
+            if (Integer.parseInt(penthouse.price) <= 0){
                 throw new NoPriceException();
             }
         }
     }
 
-    public double getPenthousePrice(){
-        return Double.parseDouble(penthousePrice);
+    @Override
+    public double getDistanceToObject(InfrastructureObjectType objectType){
+        for (InfrastructureObject iTempObject : infrastructureObjectList){
+            if (iTempObject.getInfrastructureObjectType().equals(objectType)){
+                return iTempObject.getDistance();
+            }
+        }
+        return 0.0;
+    }
+    
+    @Override
+    public double getPrice(){
+        return Double.parseDouble(price);
     }
 
-    public List<InfrastructureObject> getInfrastructures() {
-        return infrastructures;
+    @Override
+    public List<InfrastructureObject> getInfrastructureObjectList() {
+        return infrastructureObjectList;
     }
 
     public Address getAddress() {
@@ -128,23 +140,25 @@ public class Penthouse extends RealEstate {
         return floorNum;
     }
 
-    public double getPenthouseArea() {
-        return penthouseArea;
+    @Override
+    public double getArea() {
+        return area;
     }
 
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
+        sb.append(firstCharToUpperCase(getEstateType().toString())).append("\n\n");
         sb.append("Address: ").append(address).append(";\n");
-        sb.append("Penthouse area: ").append(penthouseArea).append(" sq feet;\n");
+        sb.append("Penthouse area: ").append(area).append(" sq feet;\n");
         sb.append("Bedrooms: ").append(bedroomsNum).append(";\n");
         sb.append("Infrastructure: \n");
-        if (infrastructures.size() != 0){
-            for (InfrastructureObject temp : infrastructures){
-                sb.append("  Distance to ").append(temp.getInfrastructuresType().toString().toLowerCase()).append(" - ").append(temp.getDistance()).append(" m;\n");
+        if (infrastructureObjectList.size() != 0){
+            for (InfrastructureObject temp : infrastructureObjectList){
+                sb.append("  Distance to ").append(temp.getInfrastructureObjectType().toString().toLowerCase()).append(" - ").append(temp.getDistance()).append(" m;\n");
             }
         }else{
-            sb.append("There are no infrastructure objects nearby\n");
+            sb.append("  There are no infrastructure objects nearby;\n");
         }
         sb.append("Floor: ").append(floorNum).append(";\n");
         sb.append("Terrase: ");
@@ -153,7 +167,7 @@ public class Penthouse extends RealEstate {
         }else{
             sb.append("not available").append(";\n");
         }
-        sb.append("Price: ").append(penthousePrice).append("$;\n");
+        sb.append("Price: ").append(price).append("$;\n");
         return sb.toString();
     }
 }

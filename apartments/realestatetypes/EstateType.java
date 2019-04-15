@@ -1,4 +1,4 @@
-package com.epam.apartments;
+package com.epam.apartments.realestatetypes;
 
 public enum  EstateType {
     FLAT,
