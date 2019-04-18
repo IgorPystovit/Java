@@ -1,9 +1,11 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.requesthandlers;
+
+import growepam.electricaldevices.electricaldevice.ElectricalDevice;
 
 import java.util.List;
 
-public class ElectricalDevicePrinter implements RequestHandler{
-
+public class ElectricalDevicePrinter implements RequestHandler {
+    //Prints given list of electrical devices
     public void performRequest(List<ElectricalDevice> electricalDevices){
         System.out.println();
         if (electricalDevices.size() == 0){

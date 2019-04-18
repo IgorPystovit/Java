@@ -1,12 +1,19 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.requesthandlers;
 
-import java.util.*;
+import growepam.electricaldevices.*;
+import growepam.electricaldevices.electricaldevice.ElectricalDevice;
 
-public class ElectricalDeviceManager {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class DeviceManagerMenu {
+
     private List<ElectricalDevice> electricalDevices = new ArrayList<>();
     private Scanner scan = new Scanner(System.in);
     private WiringLoadChecker loadChecker = new WiringLoadChecker();
-    public void manageDevices(){
+
+    public void manager(){
         System.out.println("Welcome to electrical devices management system");
         System.out.println("Please enter maximum value of power which your wiring can take simultaneously");
         loadChecker.readMaxValue();
@@ -21,74 +28,47 @@ public class ElectricalDeviceManager {
         do{
             System.out.println("\nPlease type your request");
             String requestListener = scan.nextLine().toUpperCase();
-            RequestType requestType = null;
+            RequestHandler requestHandler = null;
             switch (requestListener){
                 case "ADD":
-                    requestType = RequestType.ADD;
+                    requestHandler = new ElectricalDevicesListHandler(ListModifierType.ADD);
                     break;
                 case "REMOVE":
-                    requestType = RequestType.REMOVE;
+                    requestHandler = new ElectricalDevicesListHandler(ListModifierType.REMOVE);
                     break;
                 case "GET":
-                    requestType = RequestType.GET;
+                    requestHandler = new ElectricalDevicesListHandler(ListModifierType.GET);
                     break;
                 case "DISPLAY":
-                    requestType = RequestType.DISPLAY;
+                    requestHandler = new ElectricalDevicePrinter();
                     break;
                 case "TURN ON":
-                    requestType = RequestType.ON;
+                    requestHandler = new StateSwitcher(PowerState.ON);
                     break;
                 case "TURN OFF":
-                    requestType = RequestType.OFF;
+                    requestHandler = new StateSwitcher(PowerState.OFF);
                     break;
                 case "SORT":
-                    requestType = RequestType.SORT;
+                    requestHandler = new ElectricalDevicesSorter();
                     break;
                 case "EXIT":
                     return;
                 default:
                     System.out.println("No such request! Please retry!");
+                    continue;
             }
-            requestExecutor(requestType);
+            process(electricalDevices,requestHandler);
         }while (true);
 
     }
 
-    private void requestExecutor (RequestType requestType){
-        if (requestType == null){
-            return;
-        }
-        switch (requestType){
-            case ADD:
-                process(electricalDevices, new ElectricalDevicesListHandler(ListModifierType.ADD));
-                break;
-            case REMOVE:
-                process(electricalDevices, new ElectricalDevicesListHandler(ListModifierType.REMOVE));
-                break;
-            case GET:
-                process(electricalDevices,new ElectricalDevicesListHandler(ListModifierType.GET));
-                break;
-            case DISPLAY:
-                process(electricalDevices, new ElectricalDevicePrinter());
-                break;
-            case SORT:
-                process(electricalDevices,new ElectricalDevicesSorter());
-                break;
-            case ON:
-                process(electricalDevices, new StateSwitcher(PowerState.ON));
-                break;
-            case OFF:
-                process(electricalDevices, new StateSwitcher(PowerState.OFF));
-                break;
-            default:
-                return;
-        }
-    }
-
+    //strategy-like method
     private void process(List<ElectricalDevice> electricalDevices, RequestHandler requestHandler){
         requestHandler.performRequest(electricalDevices);
     }
 
+    //returns electrical device from list of electrical devices by electrical device name specified as deviceName
+    //if electrical device with such name is not present on the list returns null
     public static ElectricalDevice getDeviceByName(List<ElectricalDevice> electricalDevices, String deviceName){
         ElectricalDevice electricalDevice = null;
         for (ElectricalDevice tempDevice : electricalDevices){
@@ -100,14 +80,8 @@ public class ElectricalDeviceManager {
         return electricalDevice;
     }
 
-
-
+    //returns list of electrical devices
     public List<ElectricalDevice> getElectricalDevices(){
         return electricalDevices;
-    }
-
-    public static void main(String[] args) {
-        ElectricalDeviceManager manager = new ElectricalDeviceManager();
-        manager.manageDevices();
     }
 }

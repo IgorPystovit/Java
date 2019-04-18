@@ -1,4 +1,6 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.requesthandlers;
+
+import growepam.electricaldevices.electricaldevice.ElectricalDevice;
 
 import java.util.List;
 

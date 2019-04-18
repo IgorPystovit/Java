@@ -1,9 +1,15 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.requesthandlers;
+
+import growepam.electricaldevices.*;
+import growepam.electricaldevices.electricaldevice.ElectricalDevice;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class StateSwitcher implements RequestHandler{
+/*This class represents state switcher which turns device on
+ * or turns it off based on user request*/
+public class StateSwitcher implements RequestHandler {
+
     private static Scanner scan = new Scanner(System.in);
     public WiringLoadChecker loadChecker = new WiringLoadChecker();
     private PowerState powerState;
@@ -13,12 +19,15 @@ public class StateSwitcher implements RequestHandler{
         this.powerState = powerState;
     }
 
+    /*Determines which of devices user wants to turn on or off and calls appropriate
+    * Also this method calls checkWiringLoad method and crashes program in case of cathcing WiringOverloadException */
     public void performRequest(List<ElectricalDevice> electricalDevices){
         System.out.println("Type name of electrical device below");
         String deviceName = scan.nextLine().toUpperCase();
-        ElectricalDevice electricalDevice = ElectricalDeviceManager.getDeviceByName(electricalDevices,deviceName);
+        ElectricalDevice electricalDevice = DeviceManagerMenu.getDeviceByName(electricalDevices,deviceName);
 
         if (electricalDevice == null){
+            System.out.println("There is no such electrical device");
             return;
         }
 
@@ -42,15 +51,19 @@ public class StateSwitcher implements RequestHandler{
         }
     }
 
+    /*Checks whether given device is already on and if so prints informational message.
+    Otherwise turns it on and increases wiring load accordingly*/
     private void turnDeviceOn(ElectricalDevice electricalDevice){
         if (electricalDevice.getPowerState() == PowerState.ON){
                 System.out.println("Device is already on");
             }else{
                 electricalDevice.turnOn();
-                loadChecker.addWiringLoad(electricalDevice.getPowerConsumption());
+                loadChecker.increaseWiringLoad(electricalDevice.getPowerConsumption());
             }
     }
 
+    /*Checks whether given device is already off and if so prints informational message.
+    Otherwise turns it off and reduces wiring load accordingly*/
     private void turnDeviceOff(ElectricalDevice electricalDevice){
         if (electricalDevice.getPowerState() == PowerState.OFF){
                 System.out.println("Device is already off");

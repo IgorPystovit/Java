@@ -1,6 +1,9 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.electricaldevice;
+
+import growepam.electricaldevices.PowerState;
 
 public class ElectricalDevice {
+    //This class simply represents electrical device. Namely its states and behavior
     private PowerState powerState = PowerState.OFF;
     private double powerConsumption;
     private String deviceName;

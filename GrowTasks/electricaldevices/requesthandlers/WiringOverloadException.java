@@ -1,4 +1,4 @@
-package growepam.electricaldevices;
+package growepam.electricaldevices.requesthandlers;
 
 public class WiringOverloadException extends Exception {
     WiringOverloadException(){}
