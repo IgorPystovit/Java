@@ -1,4 +1,4 @@
-package com.epam.hypermarket.tuningparameters;
+package growepam.hypermarket.tuningparameters;
 
 public enum  Shape {
     CIRCLE,
