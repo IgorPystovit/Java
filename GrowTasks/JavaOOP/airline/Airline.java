@@ -3,9 +3,7 @@ package growepam.airline;
 import growepam.airline.plane.Plane;
 import growepam.airline.plane.PlaneManager;
 
-import java.util.LinkedHashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Airline {
     private static Scanner scan = new Scanner(System.in);
@@ -98,6 +96,14 @@ public class Airline {
 
     public Set<Plane> getPlanes() {
         return planes;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPlanes(Collection<Plane> planes) {
+        this.planes = new LinkedHashSet<>(planes);
     }
 
     @Override

@@ -2,7 +2,7 @@ package growepam.gemstones.gemstone;
 
 //This class represents gemstones properties
 //It also overrides equals method
-public class Gemstone {
+public class Gemstone implements Comparable<Gemstone>{
     private double price;
     private Clarity clarity;
     private Valuation valuation;
@@ -14,6 +14,19 @@ public class Gemstone {
         this.valuation = valuation;
         this.clarity = clarity;
         this.price = price;
+    }
+
+    @Override
+    public int compareTo(Gemstone gemstone){
+        int compareNum = 0;
+
+        if (this.price < gemstone.price){
+            compareNum = -1;
+        } else if (this.price > gemstone.price){
+            compareNum = 1;
+        }
+
+        return compareNum;
     }
 
     public String getName() {

@@ -45,7 +45,7 @@ public class AirlineEvaluator {
                     System.out.println("Total load capacity: "+totalLoadCapacity+'\n');
                     break;
                 case "SORT BY RANGE":
-                    sortByFlightRange(airline);
+                    airline.setPlanes(sortByFlightRange(airline));
                     System.out.println("Sorted!\n");
                     break;
                 case "EXIT":
@@ -75,38 +75,10 @@ public class AirlineEvaluator {
         return totalLoadCapacity;
     }
 
-    private void sortByFlightRange(Airline airline){
+    private List<Plane> sortByFlightRange(Airline airline){
         List<Plane> planes = new LinkedList<>(airline.getPlanes());
-        sort(planes,0,planes.size() - 1);
-        airline.getPlanes().clear();
-        airline.getPlanes().addAll(planes);
-    }
-
-    private int partition(List<Plane> planes, int left, int right){
-        Plane pivot = planes.get(right);
-        int i = left - 1;
-        for (int j = left; j < right; j++){
-            Plane current = planes.get(j);
-            if (current.getFlightRange() <= pivot.getFlightRange()){
-                i++;
-                Plane temp = planes.get(i);
-                planes.set(i,current);
-                planes.set(j,temp);
-            }
-        }
-        i++;
-        Plane temp = planes.get(i);
-        planes.set(i,pivot);
-        planes.set(right,temp);
-        return i;
-    }
-
-    private void sort(List<Plane> planes, int left, int right){
-        if (left <= right){
-            int partitionValue = partition(planes,left,right);
-            sort(planes,left,partitionValue - 1);
-            sort(planes,partitionValue + 1,right);
-        }
+        Collections.sort(planes);
+        return planes;
     }
 
     private List<Plane> getByFuelConsuption(Airline airline, double customFuelConsuption){

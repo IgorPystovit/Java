@@ -7,7 +7,7 @@ import java.util.Scanner;
 //This class represents Plane
 //It includes plane attributes
 //Also it includes creator method which allows to create plane with given parameters
-public class Plane {
+public class Plane implements Comparable<Plane>{
     private static Scanner scan = new Scanner(System.in);
     private String name;
     private double fuelConsumption;
@@ -24,6 +24,19 @@ public class Plane {
         this.loadCapacity = loadCapacity;
         this.passengerCapacity = passengerCapacity;
         this.planeType = planeType;
+    }
+
+    @Override
+    public int compareTo(Plane o){
+        int compareNum = 0;
+
+        if (this.flightRange < o.flightRange){
+            compareNum = -1;
+        } else if (this.flightRange > o.flightRange){
+            compareNum = 1;
+        }
+
+        return compareNum;
     }
 
     //Invokes different data reader methods in order to fill all fields required for plane creation

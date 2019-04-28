@@ -2,7 +2,7 @@ package growepam.electricaldevices.electricaldevice;
 
 import growepam.electricaldevices.PowerState;
 
-public class ElectricalDevice {
+public class ElectricalDevice implements Comparable<ElectricalDevice>{
     //This class simply represents electrical device. Namely its states and behavior
     private PowerState powerState = PowerState.OFF;
     private double powerConsumption;
@@ -12,6 +12,19 @@ public class ElectricalDevice {
     public ElectricalDevice(String deviceName, double powerConsumption){
         this.deviceName = deviceName;
         this.powerConsumption = powerConsumption;
+    }
+
+    @Override
+    public int compareTo(ElectricalDevice device){
+        int compareNum = 0;
+
+        if (this.powerConsumption < device.powerConsumption){
+            compareNum = -1;
+        } else if (this.powerConsumption > device.powerConsumption){
+            compareNum = 1;
+        }
+
+        return compareNum;
     }
 
     public PowerState getPowerState(){

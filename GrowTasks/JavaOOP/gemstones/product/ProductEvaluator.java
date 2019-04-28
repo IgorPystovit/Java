@@ -1,10 +1,12 @@
 package growepam.gemstones.product;
 
+import growepam.gemstones.gemstone.Gemstone;
 import growepam.gemstones.product.Product;
 import growepam.gemstones.component.Component;
 import growepam.gemstones.gemstone.Clarity;
 import growepam.gemstones.gemstone.GemstoneManager;
 import growepam.gemstones.product.Reader;
+import growepam.hypermarket.engine.ProductManager;
 
 import java.util.*;
 
@@ -32,7 +34,7 @@ public class ProductEvaluator {
                     evaluateWeightInCarats(product.getComponents());
                     break;
                 case "SORT":
-                    sortByPrice(product.getComponents());
+                    ProductManager.printCollection(sortByPrice(product.getComponents()));
                     break;
                 case "SELECT BY CLARITY":
                     Clarity userClarity = Reader.readClarity();
@@ -65,44 +67,20 @@ public class ProductEvaluator {
     }
 
     //sorts components of prodect by their price with quick sort
-    private Collection<Component> sortByPrice(Collection<Component> components){
+    private Collection<Gemstone> sortByPrice(Collection<Component> components){
         if ((components.size() == 0) || (components == null)){
             System.out.println("There is nothing on the list");
         }
-        List<Component> componentList = new LinkedList<>(components);
-        sort(componentList,0,componentList.size()-1);
-        components.clear();
-        components.addAll(componentList);
-        return components;
-    }
 
+        List<Gemstone> gemstones = new ArrayList<>();
 
-    private int partition(List<Component> components, int left, int right){
-        Component pivot = components.get(right);
-        int i = left - 1;
-        for (int j = left; j < right; j++){
-            Component current = components.get(j);
-            if (current.getGemstone().getPrice() <= pivot.getGemstone().getPrice()){
-                i++;
-                Component temp = components.get(i);
-                components.set(i,current);
-                components.set(j,temp);
-            }
+        for (Component component : components){
+            gemstones.add(component.getGemstone());
         }
-        i++;
-        Component temp = components.get(i);
-        components.set(i,pivot);
-        components.set(right,temp);
-        return i;
+        Collections.sort(gemstones);
+        return gemstones;
     }
 
-    private void sort(List<Component> components, int left, int right){
-        if (left <= right){
-            int partitionValue = partition(components,left,right);
-            sort(components,left,partitionValue - 1);
-            sort(components,partitionValue + 1,right);
-        }
-    }
 
     private Collection<Component> selectByClarity(Collection<Component> components, Clarity clarity){
         List<Component> gemstonesByClarity = new LinkedList<>();

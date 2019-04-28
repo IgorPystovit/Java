@@ -8,7 +8,7 @@ import java.util.Scanner;
 //This class represents component of product
 //It consists of gemstone field and weight field, which represents weight of specified gemstone
 //It also includes componentCreator method and overrided equals method
-public class Component {
+public class Component{
     private static Scanner scan = new Scanner(System.in);
     private Gemstone gemstone;
     private double weight;
