@@ -11,17 +11,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Bookcase extends Product {
-
-    private String bookcaseName;
-    private Double cost;
     private Material material;
     private Color color;
 
     public Bookcase(){}
-    public Bookcase(String BookcaseName, Color color, Double cost, Material material){
-        this.bookcaseName = BookcaseName;
+    public Bookcase(String BookcaseName, Color color, Double bookcasePrice, Material material){
+        this.productType = ProductType.BOOKCASE;
+        this.name = BookcaseName;
+        this.price = bookcasePrice;
         this.color = color;
-        this.cost = cost;
         this.material = material;
     }
 
@@ -55,29 +53,23 @@ public class Bookcase extends Product {
         }
         return recommendations;
     }
+
     public Color getColor() {
         return color;
-    }
-
-    public Double getCost() {
-        return cost;
     }
 
     public Material getMaterial(){
         return material;
     }
 
-    public String getBookcaseName() {
-        return bookcaseName;
-    }
-
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append('\n').append("Bookcase: ").append(bookcaseName);
+        sb.append('\n').append("Naming: ").append(name);
+        sb.append('\n').append("Product type: ").append(productType.toString().toLowerCase());
         sb.append('\n').append("Wood material: ").append(material.toString().toLowerCase()+";");
         sb.append('\n').append("Color: ").append(color.toString().toLowerCase()).append(";");
-        sb.append('\n').append("Cost: ").append(cost+"$;");
+        sb.append('\n').append("Cost: ").append(price+"$;");
         return sb.toString();
     }
 

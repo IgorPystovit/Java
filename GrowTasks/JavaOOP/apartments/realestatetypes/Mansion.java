@@ -5,7 +5,6 @@ import growepam.apartments.apartmentexceptions.NoApartmentAreaException;
 import growepam.apartments.apartmentexceptions.NoPriceException;
 import growepam.apartments.apartmentexceptions.NoRoomsNumException;
 import growepam.apartments.infrastructure.InfrastructureObject;
-import growepam.apartments.infrastructure.InfrastructureObjectType;
 import growepam.apartments.realestate.RealEstate;
 
 import java.util.Arrays;
@@ -13,17 +12,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Mansion extends RealEstate {
-    private final EstateType estateType = EstateType.MANSION;
-    private Address address;
     private int numberOfFloors;
     private int bedroomsNumber;
     private int bathroomsNumber;
-    private double area;
-    private String price;
-    private List<InfrastructureObject> infrastructureObjectList;
 
     public Mansion(){}
     public Mansion(MansionBuilder mansionBuilder){
+        estateType = EstateType.MANSION;
         this.area = mansionBuilder.area;
         this.price = mansionBuilder.price;
         this.address = mansionBuilder.address;
@@ -103,42 +98,16 @@ public class Mansion extends RealEstate {
         }
     }
 
-    @Override
-    public double getDistanceToObject(InfrastructureObjectType objectType){
-        for (InfrastructureObject iTempObject : infrastructureObjectList){
-            if (iTempObject.getInfrastructureObjectType().equals(objectType)){
-                return iTempObject.getDistance();
-            }
-        }
-        return 0.0;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
     public int getBedroomsNum() {
         return bedroomsNumber;
     }
 
-    @Override
-    public double getArea() {
-        return area;
+    public int getBathroomsNumber() {
+        return bathroomsNumber;
     }
 
-    @Override
-    public double getPrice() {
-        return Double.parseDouble(price);
-    }
-
-    @Override
-    public List<InfrastructureObject> getInfrastructureObjectList() {
-        return infrastructureObjectList;
-    }
-
-    @Override
-    public EstateType getEstateType() {
-        return estateType;
+    public int getNumberOfFloors() {
+        return numberOfFloors;
     }
 
     @Override

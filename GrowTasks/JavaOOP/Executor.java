@@ -21,7 +21,7 @@ public class Executor {
                     "- Airline manager;\n" +
                     "- Apartments manager;\n" +
                     "- Electrical devices manager;\n");
-            System.out.println("Type \"Exit\" to exit the program");
+            System.out.println("Type \"Exit\" to exit the manager service");
             System.out.println("Enter manager system name:");
             String managerName = scan.nextLine().toUpperCase();
             Menu managerMenu;

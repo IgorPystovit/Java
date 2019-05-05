@@ -11,16 +11,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Table extends Product{
-    private String tableName;
-    private double price;
     private Shape shapeOfTable;
     private Material material;
 
     public Table(){}
 
-    public Table(String tableName, double price, Material material, Shape shapeOfTable){
-        this.tableName = tableName;
-        this.price = price;
+    public Table(String tableName, double tablePrice, Material material, Shape shapeOfTable){
+        this.productType = ProductType.TABLE;
+        this.name = tableName;
+        this.price = tablePrice;
         this.material = material;
         this.shapeOfTable = shapeOfTable;
     }
@@ -55,16 +54,6 @@ public class Table extends Product{
         return recommendations;
     }
 
-    @Override
-    public String getName() {
-        return tableName;
-    }
-
-    @Override
-    public double getPrice() {
-        return price;
-    }
-
     public Shape getShape() {
         return shapeOfTable;
     }
@@ -77,7 +66,8 @@ public class Table extends Product{
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append('\n').append("Table: ").append(tableName);
+        sb.append('\n').append("Naming: ").append(name);
+        sb.append('\n').append("Product type: ").append(productType.toString().toLowerCase());
         sb.append('\n').append("Shape of table: ").append(shapeOfTable.toString().toLowerCase()+";");
         sb.append('\n').append("Wood material: ").append(material.toString().toLowerCase()+";");
         sb.append('\n').append("Cost: ").append(price+"$;");

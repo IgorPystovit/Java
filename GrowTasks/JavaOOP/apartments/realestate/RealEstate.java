@@ -10,10 +10,11 @@ import java.util.List;
 //It consists of area, price and estate type attributes
 //It also includes infrustructure object list of objects which are nearby the property
 public class RealEstate {
-    private double area;
-    private String price;
-    private EstateType estateType;
-    private List<InfrastructureObject> infrastructureObjectList;
+    protected double area;
+    protected String price;
+    protected EstateType estateType;
+    protected List<InfrastructureObject> infrastructureObjectList;
+    protected Address address;
 
     public List<InfrastructureObject> getInfrastructureObjectList() {
         return infrastructureObjectList;

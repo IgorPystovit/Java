@@ -9,17 +9,15 @@ import growepam.hypermarket.tuningparameters.Color;
 import java.util.HashSet;
 import java.util.Set;
 
-public class WashStand extends Product {
-    private final ProductType productType = ProductType.WASHSTAND;
-    private String nameOfWashStand;
+public class WashStand extends Product { ;
     private Color color;
-    private double washstandPrice;
 
     public WashStand() {}
     public WashStand(String nameOfWashStand, Color color, double washstandPrice) {
-        this.nameOfWashStand = nameOfWashStand;
+        this.productType = ProductType.WASHSTAND;
+        this.name = nameOfWashStand;
         this.color = color;
-        this.washstandPrice = washstandPrice;
+        this.price = washstandPrice;
     }
 
 
@@ -45,30 +43,17 @@ public class WashStand extends Product {
         return recommendations;
     }
 
-    @Override
-    public String getName() {
-        return nameOfWashStand;
-    }
-
-    @Override
-    public double getPrice() {
-        return washstandPrice;
-    }
-
-    @Override
-    public ProductType getProductType() {
-        return productType;
-    }
-
     public Color getColor(){
         return color;
     }
 
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append('\n').append("Washstand: ").append(nameOfWashStand);
+        sb.append('\n').append("Naming: ").append(name);
+        sb.append('\n').append("Product type: ").append(productType.toString().toLowerCase());
         sb.append('\n').append("Color: ").append(color.toString().toLowerCase()+";");
-        sb.append('\n').append("Price: ").append(washstandPrice + "$;");
+        sb.append('\n').append("Price: ").append(price + "$;");
         return sb.toString();
     }
 }

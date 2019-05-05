@@ -11,18 +11,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FlooringTile extends Product {
-    private final ProductType productType = ProductType.TILE;
     private Shape shape;
     private Color color;
-    private double flooringTilePrice;
-    private String nameOfFlooringTile;
 
     public FlooringTile(){}
     public FlooringTile(String nameOfFloooringTile, Color color,Shape shape, double flooringTilePrice){
-        this.nameOfFlooringTile = nameOfFloooringTile;
+        this.productType = ProductType.TILE;
+        this.name = nameOfFloooringTile;
+        this.price = flooringTilePrice;
         this.shape = shape;
         this.color = color;
-        this.flooringTilePrice = flooringTilePrice;
     }
     
     public Set<Product> selector(){
@@ -59,21 +57,6 @@ public class FlooringTile extends Product {
         return recommendations;
     }
 
-    @Override
-    public double getPrice() {
-        return flooringTilePrice;
-    }
-
-    @Override
-    public ProductType getProductType() {
-        return productType;
-    }
-
-    @Override
-    public String getName() {
-        return nameOfFlooringTile;
-    }
-
     public Color getColor(){
         return color;
     }
@@ -85,10 +68,11 @@ public class FlooringTile extends Product {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append('\n').append("Flooring tile: ").append(nameOfFlooringTile);
+        sb.append('\n').append("Naming: ").append(name);
+        sb.append('\n').append("Product type: ").append(productType.toString().toLowerCase());
         sb.append('\n').append("Shape: ").append(shape.toString().toLowerCase());
         sb.append('\n').append("Color: ").append(color.toString().toLowerCase());
-        sb.append('\n').append("Cost: ").append(flooringTilePrice+"$").append(" / sqft");
+        sb.append('\n').append("Cost: ").append(price+"$").append(" / sqft");
         return sb.toString();
     }
 

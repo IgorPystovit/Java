@@ -5,21 +5,17 @@ import growepam.apartments.apartmentexceptions.NoApartmentAreaException;
 import growepam.apartments.apartmentexceptions.NoPriceException;
 import growepam.apartments.apartmentexceptions.NoRoomsNumException;
 import growepam.apartments.infrastructure.InfrastructureObject;
-import growepam.apartments.infrastructure.InfrastructureObjectType;
 import growepam.apartments.realestate.RealEstate;
 
 import java.util.*;
 
 public class Flat extends RealEstate {
-    private final EstateType estateType = EstateType.FLAT;
-    private Address address;
-    private double area;
     private int bedroomsNum;
-    private String price;
-    private List<InfrastructureObject> infrastructureObjectList;
+
 
     public Flat(){}
     public Flat(FlatBuilder flatBuilder){
+        this.estateType = EstateType.FLAT;
         this.address = flatBuilder.address;
         this.area = flatBuilder.area;
         this.bedroomsNum = flatBuilder.bedroomsNum;
@@ -86,42 +82,9 @@ public class Flat extends RealEstate {
         }
     }
 
-    @Override
-    public double getDistanceToObject(InfrastructureObjectType objectType){
-        for (InfrastructureObject iTempObject : infrastructureObjectList){
-            if (iTempObject.getInfrastructureObjectType().equals(objectType)){
-                return iTempObject.getDistance();
-            }
-        }
-        return 0.0;
-    }
-    
-    public Address getAddress() {
-        return address;
-    }
-
-    @Override
-    public double getArea() {
-        return area;
-    }
 
     public int getBedroomsNum() {
         return bedroomsNum;
-    }
-
-    @Override
-    public double getPrice() {
-        return Double.parseDouble(price);
-    }
-
-    @Override
-    public List<InfrastructureObject> getInfrastructureObjectList() {
-        return infrastructureObjectList;
-    }
-
-    @Override
-    public EstateType getEstateType() {
-        return estateType;
     }
 
 

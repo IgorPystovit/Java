@@ -5,7 +5,6 @@ import growepam.apartments.apartmentexceptions.NoApartmentAreaException;
 import growepam.apartments.apartmentexceptions.NoPriceException;
 import growepam.apartments.apartmentexceptions.NoRoomsNumException;
 import growepam.apartments.infrastructure.InfrastructureObject;
-import growepam.apartments.infrastructure.InfrastructureObjectType;
 import growepam.apartments.realestate.RealEstate;
 
 import java.util.Arrays;
@@ -13,17 +12,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Penthouse extends RealEstate {
-    private final EstateType estateType = EstateType.PENTHOUSE;
     private int floorNum;
     private boolean hasTerrace;
-    private double area;
     private int bedroomsNum;
-    private String price;
-    private List<InfrastructureObject> infrastructureObjectList;
-    private Address address;
 
     public Penthouse(){}
     public Penthouse(PenthouseBuilder penthouseBuilder){
+        estateType = EstateType.PENTHOUSE;
         this.area = penthouseBuilder.area;
         this.bedroomsNum = penthouseBuilder.bedroomsNum;
         this.floorNum = penthouseBuilder.floorNum;
@@ -104,46 +99,16 @@ public class Penthouse extends RealEstate {
         }
     }
 
-    @Override
-    public double getDistanceToObject(InfrastructureObjectType objectType){
-        for (InfrastructureObject iTempObject : infrastructureObjectList){
-            if (iTempObject.getInfrastructureObjectType().equals(objectType)){
-                return iTempObject.getDistance();
-            }
-        }
-        return 0.0;
-    }
-    
-    @Override
-    public double getPrice(){
-        return Double.parseDouble(price);
-    }
-
-    @Override
-    public List<InfrastructureObject> getInfrastructureObjectList() {
-        return infrastructureObjectList;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
     public int getBedroomsNum() {
         return bedroomsNum;
-    }
-
-    @Override
-    public EstateType getEstateType() {
-        return estateType;
     }
 
     public int getFloorNum() {
         return floorNum;
     }
 
-    @Override
-    public double getArea() {
-        return area;
+    public boolean isHasTerrace() {
+        return hasTerrace;
     }
 
     @Override
